@@ -1,0 +1,36 @@
+﻿#modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: grey;
+    z-index: 2; 
+}
+#content {
+   background-color:antiquewhite;
+   width: 300px;
+   height: 200px;
+   position: relative;
+   top: 30%;
+   left: 40%
+}
+ .show {
+    display: block !important;
+}
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.blue {
+    background: blue;
+}
+.white {
+    background: white;
+}
+.active {
+    background: lightgray;
+}
+
