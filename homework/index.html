@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title></title>
+          
+    <script>
+     $(function() {
+        $('.main').append('<p>Веб-cайты, упомянутые в данном документе:</p>');
+        $('a').each(function (i) {
+            if ($(this)) {
+                $('.main').append('<ul>');
+                let href = $(this).attr('href');
+                $('.main').append('<li> <strong>' + $(this).text()+ ' : </strong>' + href + '</li>');
+                $('.main').append('</ul>');
+            }
+            
+})
+      });
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="main">
+            <h1>Динамически созданная библиография</h1>
+            <p>Существует много фантастических веб-сайтов. <a href="http://www.yahoo.com/">Yahoo!</a> приходит на ум,
+                как и <a href="http://www.google.com/">Google</a>. Мало, кто забудет влияние, оказанное на культуру
+                сайтом <a href="http://www.hampsterdance.com/">Hampster Dance</a>.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
